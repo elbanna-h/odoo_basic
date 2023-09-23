@@ -1,0 +1,20 @@
+.modal.o_technical_modal {
+    .modal-content {
+        .modal-header .o_subtitle {
+            margin-left: 10px;
+        }
+
+        .modal-body {
+            // Fix dropzones of nested sortable.
+            .mjs-nestedSortable-error {
+                outline: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &.o_modal_full .modal-dialog .modal-content .modal-header .o_subtitle {
+            color: $o-navbar-entry-color;
+        }
+    }
+}
